@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: #fff;
+  padding: 1rem 5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
-.App-link {
-  color: #61dafb;
+.ul-navbar {
+  display: flex;
+  list-style: none;
+  margin-left: auto;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.li-navbar {
+  list-style: none;
+  padding-inline: 1rem;
+}
+
+.li-navbar:first-child {
+  padding-left: 2rem;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0;
+  color: rgb(0, 110, 255);
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo-container {
+  display: flex;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.book-container {
+  margin: 4rem;
+}
+
+.book-data {
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  list-style: none;
+}
+
+.form-container {
+  margin: 4rem;
+}
+
+hr {
+  border: 0.5px solid #ccc;
+  margin: 4rem;
+}
+
+.form {
+  padding: 1rem 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  margin-right: 1.5rem;
+  width: 40%;
+  padding: 5px;
+}
+
+.author {
+  margin-right: 1.5rem;
+  width: 40%;
+  padding: 5px;
+}
+
+.add-book {
+  padding: 5px;
 }
