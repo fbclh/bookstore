@@ -7,9 +7,7 @@ const Book = ({ category, title, author }) => (
       <h4>{title}</h4>
       <p>{author}</p>
       <div>
-        {/* <button type="button">Add</button> */}
         <button type="button">Remove</button>
-        {/* <button type="button">Edit</button> */}
       </div>
     </div>
   </li>

@@ -5,7 +5,6 @@ const BooksList = ({ books }) => (
   <ul>
     {books.map((book) => (
       <Book
-        // category={book.category}
         title={book.title}
         author={book.author}
         key={book.id}
