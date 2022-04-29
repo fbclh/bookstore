@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 1rem 5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.ul-navbar {
+  display: flex;
+  list-style: none;
+  margin-left: auto;
+  align-items: center;
+}
+
+.li-navbar {
+  list-style: none;
+  padding-inline: 1rem;
+}
+
+.li-navbar:first-child {
+  padding-left: 2rem;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0;
+  color: rgb(0, 110, 255);
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo-container {
+  display: flex;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.book-container {
+  margin: 4rem;
+}
+
+.book-data {
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  list-style: none;
+}
+
+.form-container {
+  margin: 4rem;
+}
+
+hr {
+  border: 0.5px solid #ccc;
+  margin: 4rem;
+}
+
+.form {
+  padding: 1rem 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  margin-right: 1.5rem;
+  width: 40%;
+  padding: 5px;
+}
+
+.author {
+  margin-right: 1.5rem;
+  width: 40%;
+  padding: 5px;
+}
+
+.add-book {
+  padding: 5px;
+}
