@@ -7,7 +7,7 @@ const Book = ({ category, title, author }) => {
   const dispatch = useDispatch();
 
   const handleDeleteBook = (e) => {
-    // console.log('delete book');
+    console.log('delete book');
     const bookRemoved = {
       id: uuidv4(),
       title,
