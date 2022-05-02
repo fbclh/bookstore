@@ -90,3 +90,11 @@ hr {
 .add-book {
   padding: 5px;
 }
+
+.btn {
+  padding: 5px;
+  /* background: #fff; */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
