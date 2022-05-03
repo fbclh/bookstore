@@ -7,15 +7,10 @@ const Book = ({
 }) => {
   const dispatch = useDispatch();
 
-  // const handleDeleteBook = (e) => {
-  //   e.preventDefault();
-  //   console.log('delete book');
-  //   const bookRemoved = {
-  //     title,
-  //     author,
-  //   };
-  //   dispatch(removeBook(bookRemoved));
-  // };
+  const handleDeleteBook = (e) => {
+    e.preventDefault();
+    dispatch(removeBook(id));
+  };
 
   return (
     <li className="book-li" id={id}>
@@ -25,15 +20,7 @@ const Book = ({
         <p>{author}</p>
         <div>
           <button type="button">Add</button>
-          {/* <button type="button" onClick={handleDeleteBook}>
-            Remove
-          </button> */}
-          <button
-            type="button"
-            onClick={(e) => {
-              dispatch(removeBook(e.target.parentNode.id));
-            }}
-          >
+          <button type="button" onClick={handleDeleteBook}>
             Remove
           </button>
           <button type="button">Edit</button>
