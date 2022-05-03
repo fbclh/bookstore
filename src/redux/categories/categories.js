@@ -1,14 +1,14 @@
-const CHECK_CATEGORIES = 'CHECK_CATEGORIES';
+const CHECK_STATUS = 'CHECK_CATEGORIES';
 
-export default function reducer(state = {}, action) {
+export default function reducer(state = [], action) {
   switch (action.type) {
-    case CHECK_CATEGORIES:
+    case CHECK_STATUS:
       return 'Under construction';
     default:
       return state;
   }
 }
 
-export const checkCategories = () => ({
-  type: CHECK_CATEGORIES,
+export const checkStatus = () => ({
+  type: CHECK_STATUS,
 });
