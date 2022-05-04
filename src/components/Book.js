@@ -1,6 +1,6 @@
 import { PropTypes } from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../redux/books/books';
+import { removeBookFromAPI } from '../redux/books/books';
 
 const Book = ({
   category, title, author, id,
@@ -9,11 +9,11 @@ const Book = ({
 
   const handleDeleteBook = (e) => {
     e.preventDefault();
-    dispatch(removeBook(id));
+    dispatch(removeBookFromAPI(id));
   };
 
   return (
-    <li className="book-li" id={id}>
+    <li className="book-li">
       <div className="book-container">
         <h3>{category}</h3>
         <h4>{title}</h4>
