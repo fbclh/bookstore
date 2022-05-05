@@ -3,20 +3,25 @@
   padding: 0;
 }
 
+html {
+  background-color: #fafafa;
+}
+
 .navbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding: 1.25rem 5rem;
+  border-bottom: solid 1px #e8e8e8;
   background: #fff;
-  padding: 1rem 5rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 .ul-navbar {
   display: flex;
-  list-style: none;
-  margin-left: auto;
   align-items: center;
+  margin-left: auto;
+  list-style: none;
 }
 
 .li-navbar {
@@ -29,9 +34,9 @@
 }
 
 h1 {
-  font-size: 2em;
   margin: 0;
-  color: rgb(0, 110, 255);
+  color: #0290ff;
+  font-size: 2em;
 }
 
 a {
@@ -42,13 +47,34 @@ a {
   display: flex;
 }
 
+/* Card */
+.book-title {
+  width: 12.313rem;
+  height: 1.813rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.book-author {
+  color: #0290ff;
+  font-size: 0.875rem;
+}
+
 .user {
   display: flex;
   align-items: center;
 }
 
 .book-container {
-  margin: 4rem;
+  display: flex;
+  align-items: baseline;
+  align-self: center;
+  justify-content: space-between;
+  margin: 1rem 5rem;
+  padding: 1.68rem;
+  border: solid 1px #e8e8e8;
+  border-radius: 4px;
+  background-color: #fff;
 }
 
 .book-data {
@@ -60,41 +86,113 @@ li {
   list-style: none;
 }
 
-.form-container {
-  margin: 4rem;
+hr {
+  margin: 2rem 5rem;
+  border: 0.5px solid #e8e8e8;
 }
 
-hr {
-  border: 0.5px solid #ccc;
+/* Form */
+.form-container {
   margin: 4rem;
+  margin-top: 0;
+  margin-right: 5rem;
+  margin-left: 5rem;
+}
+
+.form-title {
+  margin-bottom: 2rem;
+  color: #888888;
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 
 .form {
-  padding: 1rem 0 0;
   display: flex;
   justify-content: space-between;
 }
 
 .title {
-  margin-right: 1.5rem;
   width: 40%;
-  padding: 5px;
+  margin-right: 1.5rem;
+  padding-left: 5px;
+  border: solid 1px #e8e8e8;
+  border-radius: 4px;
+}
+
+.title::placeholder {
+  color: #c4c4c4;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.chapter {
+  margin-right: 3rem;
+}
+
+.current-chapter {
+  margin-bottom: 0.5rem;
+  color: #d1d1d1;
+  font-size: 0.8rem;
+}
+
+.chapter-number {
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+}
+
+.update-btn {
+  width: 11.5rem;
+  height: 2.063rem;
+  height: 2.063rem;
+  border: transparent;
+  border-radius: 3px;
+  border-radius: 3px;
+  background-color: #0290ff;
+  color: #fff;
+  cursor: pointer;
 }
 
 .author {
-  margin-right: 1.5rem;
   width: 40%;
-  padding: 5px;
+  margin-right: 1.5rem;
+  padding-left: 5px;
+  border: solid 1px #e8e8e8;
+  border-radius: 4px;
+}
+
+.author::placeholder {
+  color: #c4c4c4;
 }
 
 .add-book {
   padding: 5px;
 }
 
-.btn {
-  padding: 5px;
-  /* background: #fff; */
-  border: 1px solid #ccc;
-  border-radius: 5px;
+.btn-primary {
+  width: 11.5rem;
+  height: 2.813rem;
+  border: transparent;
+  border-radius: 3px;
+  background-color: #0290ff;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  margin-top: 1.5rem;
+  margin-right: 2.25rem;
+  border: none;
+  background-color: transparent;
+  color: #0290ff;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 300;
   cursor: pointer;
 }

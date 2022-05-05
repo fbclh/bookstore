@@ -11,7 +11,7 @@ const Categories = () => {
   return (
     <div>
       <button type="button" onClick={handleCheckStatus}>
-        Check Status
+        Check categories
       </button>
     </div>
   );
