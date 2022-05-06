@@ -1,3 +1,4 @@
+import { FaUserCircle } from 'react-icons/fa';
 import { NavLink, Outlet } from 'react-router-dom';
 
 const Navbar = () => (
@@ -36,7 +37,15 @@ const Navbar = () => (
           </li>
         </ul>
       </div>
-      <div className="user">LOGIN</div>
+      <div className="user">
+        <FaUserCircle
+          style={{
+            fontSize: '2.125rem',
+            color: '#0290ff',
+
+          }}
+        />
+      </div>
     </nav>
     <Outlet />
   </div>
